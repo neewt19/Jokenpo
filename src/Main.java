@@ -20,10 +20,10 @@ public class Main {
             System.out.printf("A máquina escolheu %s", maquina);
             System.out.println("\nEmpate");
         }
-        if (maquina == "Pedra" && escolha == "Tesoura") {
+        if (maquina.equals("Pedra") && escolha.toLowerCase().equals("tesoura")) {
             System.out.printf("A máquina escolheu %s", maquina);
             System.out.println("Vitória da máquina");
-        } else if (maquina == "Papel" && escolha == "Pedra") {
+        } else if (maquina.equals("Papel") && escolha.toLowerCase().equals("pedra")) {
             System.out.printf("A máquina escolheu %s", maquina);
             System.out.println("Vitória da máquina");
         }else if (maquina.equals("Tesoura") && escolha.toLowerCase().equals("papel")) {
